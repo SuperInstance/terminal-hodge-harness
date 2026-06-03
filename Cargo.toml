@@ -1,0 +1,12 @@
+[package]
+name = "terminal-hodge-harness"
+version = "0.1.0"
+edition = "2021"
+description = "Terminal-facing Hodge decomposition harness that delegates to hodge-belief-rs"
+
+[dependencies]
+hodge-belief = { git = "https://github.com/SuperInstance/hodge-belief-rs" }
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
+serde_json = "1"
